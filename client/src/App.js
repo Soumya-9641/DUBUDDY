@@ -31,7 +31,7 @@ function App() {
       <Route exact path="/login" element={<><SigninPage/></>}/>
      
       <Route exact path="/createsession" element={<><CreateSession/></>}/>
-      <Route exact path="/listsession" element={<><ListSession/></>}/>
+      <Route exact path="/listsession" element={<><ListSession/><Footer/></>}/>
       <Route exact path="/teachersession" element={<><Teacher/><Footer/></>}/>
       <Route exact path="/teacheracceptedsession" element={<><Accepted/><Footer/></>}/>
     </Routes>

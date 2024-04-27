@@ -38,8 +38,8 @@ const ListSession = () => {
         fetchSessions();
     }, []);
   return (
-    <section className="text-gray-600 body-font overflow-hidden">
-  <div className="container flex justify-center px-5 py-24 mx-auto">
+    <section className="text-gray-600 body-font">
+  <div className="container  px-5 py-24 mx-auto">
     {/* <div className="-my-8 divide-y-2 divide-gray-100">
     {sessions.map(session => (
       <div key={session._id} className="py-8 flex flex-wrap md:flex-nowrap">
@@ -69,12 +69,12 @@ const ListSession = () => {
        <div className="h-full shadow-yellow-950 bg-gradient-to-r from-slate-800 to-gray-500 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
          <div className="p-6">
            <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{new Date(session.date).toLocaleDateString()} {new Date(session.date).toLocaleTimeString([], { timeZone: 'UTC' })}</h2>
-           <h1 className="title-font text-lg font-medium text-indigo-300 mb-3"><span>Teacher:</span> {session.teacher.name}</h1>
+           <h1 className="title-font text-lg font-medium text-indigo-300 mb-3">Teacher:{session.teacher.name}</h1>
            <p className="leading-relaxed mb-3 text-gray-200">{session.details}</p>
            
            <div className="flex items-center flex-wrap">
             
-           <p className={`text-${session.status === 'Rejected' ? 'red' : session.status === 'Accepted' ? 'green' : 'indigo'}-500 inline-flex items-center mt-4`}>{session.status}
+           <p className={`text-${session.status === 'Rejected' ? 'red' : session.status === 'Accepted' ? 'green' : 'teal'}-500 inline-flex items-center mt-4`}>{session.status}
             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
